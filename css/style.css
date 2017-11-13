@@ -45,3 +45,28 @@ a.menu-logo{
     font-size: 1.125em;
     text-decoration: none;
 }
+
+/*-----------------------------INTRO------------------------------*/
+.intro{
+    background: url('../img/bg-intro.jpg') no-repeat center center;
+    background-size: cover;
+    padding: 150px 0;
+    text-align: center;
+    color: #ffffff;
+}
+.intro h1{
+    text-transform: uppercase;
+    font-size: 3em;
+}
+.intro h1::after{
+    content: '';
+    display: block;
+    width: 20px;
+    height: 4px;
+    background: #ffffff;
+    margin: 10px auto;
+}
+.intro p{
+    font-size: 1.125em;
+    font-style: italic;
+}
