@@ -257,3 +257,83 @@ a.menu-logo{
     background: #252525;
     color: #ffffff;
 }
+
+.sign{
+    padding: 30px 0;
+    background: #e7e4d8;
+}
+.sign-container{
+    max-width: 960px;
+    margin: 0 auto;
+}
+.sign-container::after, .sign-container::before{
+    content: '';
+    display: table;
+    clear: both;
+}
+.sign-info{
+    width: 460px;
+    margin: 0 10px;
+    float: left;
+}
+.sign-info h2{
+    font-size: 2.25em;
+}
+.sign-info p{
+    font-size: 1.5em;
+    font-style: italic;
+}
+.sign form{
+    width: 460px;
+    margin: 0 10px;
+    float: left;
+}
+.sign form label{
+    display: none;
+}
+.sign form input{
+    width:320px;
+    border:3px solid #252525;
+    background: none;
+    font-size: 1.5em;
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    float: left;
+    outline: none; 
+    padding: 10px;
+}
+.sign button{
+    background: #252525;
+    text-transform: uppercase;
+    color: #ffffff;
+    width: 140px;
+    padding: 13px 0;
+    border: none;
+    font-size: 1.5em;
+    cursor: pointer;
+    outline: none;
+}
+.footer{
+    background: #d6d3c8;
+    padding: 40px 0;
+}
+.footer-container{
+    max-width: 960px;
+    margin: 0 auto;
+}
+.footer-container::after, .footer-container::before{
+    content: '';
+    display: table;
+    clear: both;
+}
+.footer p{
+    float: left;
+    margin: 0 10px;
+    font-size: 1.125em;
+    line-height: 1.4em;
+}
+.footer img{
+    float: right;
+    margin: 0 10px;
+    display: block;
+}
