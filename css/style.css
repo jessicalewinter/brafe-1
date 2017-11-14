@@ -22,13 +22,23 @@ p{
     max-width: 960px;
     margin: 0 auto;
 }
+@media only screen and (max-width: 739px){
+    .container{
+        flex-direction: column;
+        max-width: 300px;
+    }
+}
 /*-----------------------------MENU------------------------------*/
 
 .menu{
     background: #252525;
     padding: 15px;
 }
+.menu-logo{
+    margin: 0 10px;
+}
 .menu-nav{
+    margin: 0 10px;
     flex: 1;
     align-self: center;
 }
@@ -44,7 +54,17 @@ p{
     margin-left: 10px;
     padding: 10px;
 }
-
+@media only screen and (max-width: 739px){
+    .menu-logo, .menu-nav{
+        margin: 0;
+    }
+    .menu-nav{
+        margin-top: 10px;
+    }
+    .menu-nav ul li a{
+        padding-left: 0px;
+    }
+}
 /*-----------------------------INTRO------------------------------*/
 
 .intro{
@@ -71,6 +91,11 @@ p{
     font-size: 1.125em;
     font-style: italic;
 }
+@media only screen and (max-width: 739px){
+    .intro{
+        padding: 60px 0;
+    }
+}
 
 /*-----------------------------INTRO------------------------------*/
 .about{
@@ -84,6 +109,12 @@ p{
 .about-item{
     flex: 1;
     margin: 0 10px;
+}
+@media only screen and (max-width: 739px){
+    .about-item{
+        margin-left: 0;
+        margin-right: 0;
+    }
 }
 .about-item img{
     display: block;
@@ -174,6 +205,12 @@ p{
     background: #252525;
     color: #e7e4d8;
 }
+@media only screen and (max-width: 739px){
+    .products-item{
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
 
 /*-----------------------------LOCAL------------------------------*/
 .local{
@@ -193,6 +230,7 @@ p{
 .local-item h2{
     font-size: 2.25em;
     margin-bottom: 20px;
+    margin-top: 10px;
 }
 .local-item p {
     font-size: 1.125em;
@@ -215,6 +253,12 @@ p{
     background: #252525;
     color: #ffffff;
 }
+@media only screen and (max-width: 739px){
+    .local-img, .local-info{
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
 
 /*-----------------------------SIGN------------------------------*/
 
@@ -225,7 +269,6 @@ p{
 .sign-info{
     flex: 1;
     margin: 0 10px;
-    display: flex;
 }
 .sign-info h2{
     font-size: 2.25em;
@@ -236,7 +279,7 @@ p{
 }
 .sign form{
     flex: 1;
-    margin: 0 auto;
+    margin: 0 10px;
     display: flex;
     flex-wrap: wrap;
     align-content: flex-start;
@@ -258,7 +301,7 @@ p{
 .sign button{
     flex: 1;
     align-self: flex-start;
-    padding: 12px;
+    padding: 13px;
     background: #252525;
     text-transform: uppercase;
     color: #ffffff;
@@ -266,6 +309,14 @@ p{
     font-size: 1.5em;
     cursor: pointer;
     outline: none;
+}
+@media only screen and (max-width: 739px){
+    .sign-info{
+        margin: 0 0 20px 0;
+    }
+    .sign form{
+        margin: 0;
+    }
 }
 
 /*-----------------------------FOOTER------------------------------*/
@@ -284,5 +335,10 @@ p{
 
 .footer-img{
     margin: 0 10px;
+}
+@media only screen and (max-width: 739px){
+    .footer-img, .footer p{
+        margin: 10px 0;
+    }
 }
 
