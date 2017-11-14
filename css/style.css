@@ -24,13 +24,32 @@ img{
 
 .menu{
     background: #252525;
+    padding: 15px 0;
 }
-
+.menu-nav ul{
+    float:right;
+}
+.menu-nav ul li{
+    display: inline-block;
+}
 .menu-nav a{
     display: block;
     color: #ffffff;
     font-size: 1.125em;
     text-decoration: none;
+    padding: 10px;
+    margin-left: 10px; 
+}
+
+@media only screen and (max-width:739px){
+    .menu-nav ul{
+        float: none;
+    }
+    .menu-nav a{
+        margin-left: 0;
+        padding-left: 0;
+        padding-right: 8px;
+    }
 }
 
 /*-----------------------------INTRO------------------------------*/
@@ -40,6 +59,8 @@ img{
     background-size: cover;
     text-align: center;
     color: #ffffff;
+    padding: 150px 0;
+    text-align: center;
 }
 .intro h1{
     text-transform: uppercase;
@@ -51,12 +72,17 @@ img{
     width: 20px;
     height: 4px;
     background: #ffffff;
+    margin: 10px auto;
 }
 .intro p{
     font-size: 1.125em;
     font-style: italic;
 }
-
+@media only screen and (max-width:739px){
+    .intro{
+        padding: 60px 0;
+    }
+}
 /*-----------------------------INTRO------------------------------*/
 
 .about h2{
