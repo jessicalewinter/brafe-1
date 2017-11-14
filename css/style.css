@@ -16,6 +16,10 @@ body{
 p{
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
+img{
+    max-width:100%;
+    display: block;
+}
 /*-----------------------------MENU------------------------------*/
 
 .menu{
@@ -85,10 +89,7 @@ a.menu-logo{
     float: left;
     margin: 0 10px;
 }
-.about-item img{
-    display: block;
-    max-width: 100%;
-}
+
 .about-item h3{
     font-size: 2.25em;
     background: #252525;
