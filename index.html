@@ -6,20 +6,24 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Brafé-1</title>
 
-    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
  
 </head>
 <body>
     <header class="menu">
         <div class="container">
-            <a class="menu-logo" href="#"><img src="img/brafe.png" alt="Brafé-1"></a>
-            <nav class="menu-nav">
-                <li><a href="#">About</a></li>
-                <li><a href="#">Products</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Contact</a></li>
-            </nav>
+            <div class="row">
+                <a class="menu-logo col-md-4" href="#"><img src="img/brafe.png" alt="Brafé-1"></a>
+                <nav class="menu-nav col-md-8">
+                    <ul>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Products</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
     </header>
 
@@ -28,14 +32,14 @@
         <p>From Minas Gerais's farms</p>
     </main>    
 
-    <section class="about">
-        <div class="container">
-            <h2>A mix of</h2>
-            <div class="about-item grid-6">
+    <section class="about container">
+        <h2>A mix of</h2>
+        <div class="row">
+            <div class="about-item col-sm">
                 <img src="img/cafe-1.jpg" alt="Café 1">
                 <h3>Love</h3>
             </div>
-            <div class="about-item grid-6">
+            <div class="about-item col-sm">
                 <img src="img/cafe-2.jpg" alt="Café 2">
                 <h3>Perfection</h3>
             </div>
@@ -48,35 +52,37 @@
     </section>
 
     <section class="products">
-        <div class="container">
-            <div class="products-item grid-4">
-                <h2>Paulista</h2>
-                <p>Mussum Ipsum, cacilds vidis litro abertis. Quem num gosta di mim que vai caçá sua turmis!
-                    Em pé sem cair, deitado sem dormir, sentado sem cochilar e fazendo pose. 
-                </p>
+        <div class="container">   
+            <div class="row">
+                <div class="products-item col-sm">
+                    <h2>Paulista</h2>
+                    <p>Mussum Ipsum, cacilds vidis litro abertis. Quem num gosta di mim que vai caçá sua turmis!
+                        Em pé sem cair, deitado sem dormir, sentado sem cochilar e fazendo pose. 
+                    </p>
+                </div>
+                <div class="products-item col-sm">
+                    <h2>Mineiro</h2>
+                    <p>Mussum Ipsum, cacilds vidis litro abertis. Mauris nec dolor in eros commodo tempor.
+                        enean aliquam molestie leo, vitae iaculis nisl. 
+                    </p>
+                </div>
+                <div class="products-item col-sm">
+                    <h2>Carioca</h2>
+                    <p>Mussum Ipsum, cacilds vidis litro abertis. Per aumento de cachacis, eu reclamis. 
+                    Sed non consequat odio. Diuretics paradis num copo é motivis 
+                    </p>
+                </div>
             </div>
-            <div class="products-item grid-4">
-                <h2>Mineiro</h2>
-                <p>Mussum Ipsum, cacilds vidis litro abertis. Mauris nec dolor in eros commodo tempor.
-                    enean aliquam molestie leo, vitae iaculis nisl. 
-                </p>
-            </div>
-            <div class="products-item grid-4">
-                <h2>Carioca</h2>
-                <p>Mussum Ipsum, cacilds vidis litro abertis. Per aumento de cachacis, eu reclamis. 
-                   Sed non consequat odio. Diuretics paradis num copo é motivis 
-                </p>
-            </div>
+            <button class="products-btn">Saiba Mais</button>
         </div>
-        <button class="products-btn">Saiba Mais</button>
     </section>
 
-    <section class="local">
-        <div class="local-item container">
-            <div class="grid-6">
+    <section class="local container">
+        <div class="local-item row">
+            <div class="col-sm">
                 <img src="img/botafogo.jpg" alt="Botafogo">
             </div>
-            <div class="grid-6">
+            <div class="col-sm">
                 <h2>Botafogo</h2>
                 <p> Si u mundo tá muito paradis? Toma um mé que o mundo vai girarzis! 
                     Admodum accumsan disputationi eu sit. 
@@ -84,11 +90,11 @@
                 <button>saiba mais</button>
             </div>
         </div>
-        <div class="local-item container">
-            <div class="grid-6">
+        <div class="local-item row">
+            <div class="col-sm">
                 <img src="img/iguatemi.jpg" alt="Iguatemi">
             </div>
-            <div class="grid-6">
+            <div class="col-sm">
                 <h2>Iguatemi</h2>
                 <p>Mussum Ipsum, cacilds vidis litro abertis. 
                     Diuretics paradis num copo é motivis de denguis. 
@@ -97,11 +103,11 @@
                 <button>saiba mais</button>
             </div>
         </div>
-        <div class="local-item container">
-            <div class="grid-6">
+        <div class="local-item row">
+            <div class="col-sm">
                 <img src="img/mineirao.jpg" alt="Mineirão">
             </div>
-            <div class="grid-6">
+            <div class="col-sm">
                 <h2>Mineirão</h2>
                 <p> Interagi no mé, cursus quis, vehicula ac nisi. 
                     Nullam volutpat risus nec leo commodo, ut interdum diam laoreet
@@ -113,25 +119,29 @@
 
     <section class="sign">
         <div class="container">
-            <div class="sign-info grid-6">
-                <h2>Assine nossa newsletter</h2>
-                <p>promoções e eventos mensais</p>  
+            <div class="row">
+                <div class="sign-info col-sm">
+                    <h2>Assine nossa newsletter</h2>
+                    <p>promoções e eventos mensais</p>  
+                </div>
+                <form action="" class="col-sm">
+                    <label for="">E-mail</label>
+                    <input type="text" placeholder="Type your email">
+                    <button type="submit">Send</button>
+                </form>
             </div>
-            <form action="">
-                <label for="">E-mail</label>
-                <input type="text" placeholder="Type your email">
-                <button type="submit">Send</button>
-            </form>
         </div>
     </section>
 
     <footer class="footer">
         <div class="container">
-            <p class="grid-8">Mussum Ipsum, cacilds vidis litro abertis. Casamentiss faiz malandris se pirulitá<br/>. 
-                Não sou faixa preta cumpadi, sou preto inteiris, inteiris.. Sed non consequat odio.
-            </p>
-            <div class="grid-4">
-                <img src="img/brafe.png" alt="Brafé-Logo">
+            <div class="row">
+                <p class="col-sm">Mussum Ipsum, cacilds vidis litro abertis. Casamentiss faiz malandris se pirulitá<br/>. 
+                    Não sou faixa preta cumpadi, sou preto inteiris, inteiris.. Sed non consequat odio.
+                </p>
+                <div class="col-sm">
+                    <img src="img/brafe.png" alt="Brafé-Logo">
+                </div>
             </div>
         </div>
     </footer>
