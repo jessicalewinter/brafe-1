@@ -220,8 +220,13 @@ p{
 
 .sign{
     background: #e7e4d8;
+    padding: 30px 0;
 }
-
+.sign-info{
+    flex: 1;
+    margin: 0 10px;
+    display: flex;
+}
 .sign-info h2{
     font-size: 2.25em;
 }
@@ -229,10 +234,20 @@ p{
     font-size: 1.5em;
     font-style: italic;
 }
+.sign form{
+    flex: 1;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
 .sign form label{
     display: none;
 }
 .sign form input{
+    flex: 1;
+    align-self: flex-start;
+    padding: 10px;
     border:3px solid #252525;
     background: none;
     font-size: 1.5em;
@@ -241,6 +256,9 @@ p{
     outline: none; 
 }
 .sign button{
+    flex: 1;
+    align-self: flex-start;
+    padding: 12px;
     background: #252525;
     text-transform: uppercase;
     color: #ffffff;
@@ -254,10 +272,17 @@ p{
 
 .footer{
     background: #d6d3c8;
+    padding: 40px 0;
 }
 
 .footer p{
     font-size: 1.125em;
     line-height: 1.4em;
+    margin: 0 10px;
+    flex: 1;
+}
+
+.footer-img{
+    margin: 0 10px;
 }
 
