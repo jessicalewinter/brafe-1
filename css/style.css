@@ -89,7 +89,8 @@ img{
 
 /*-----------------------------INTRO------------------------------*/
 .about {
-    padding: 60px 0;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 .about h2{
     font-size: 2.25em;
@@ -118,6 +119,12 @@ img{
     max-width: 460px;
     margin: 20px auto;
     text-align: center;
+}
+@media only screen and (max-width:768px) {
+    .about-item{
+        margin: 0;
+    }
+
 }
 
 /*-----------------------------PRODUCTS------------------------------*/
@@ -218,18 +225,28 @@ img{
     color: #ffffff;
 }
 
+
 /*-----------------------------SIGN------------------------------*/
 
 .sign{
     background: #e7e4d8;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .sign-info h2{
     font-size: 2.25em;
+    font-weight: bold;
 }
 .sign-info p{
     font-size: 1.5em;
     font-style: italic;
+}
+.sign form{
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
 }
 .sign form label{
     display: none;
@@ -241,6 +258,8 @@ img{
     font-style: italic;
     font-family: Georgia, 'Times New Roman', Times, serif;
     outline: none; 
+    align-self: flex-start;
+    padding: 10px;
 }
 .sign button{
     background: #252525;
@@ -250,16 +269,27 @@ img{
     font-size: 1.5em;
     cursor: pointer;
     outline: none;
+    padding: 13px;
 }
 
 /*-----------------------------FOOTER------------------------------*/
 
 .footer{
     background: #d6d3c8;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 
 .footer p{
     font-size: 1.125em;
     line-height: 1.4em;
 }
-
+.footer img{
+    float: right;
+}
+@media only screen and (max-width: 768px){
+    .footer img{
+        float: none;
+        margin-top: 20px;
+    }
+}
