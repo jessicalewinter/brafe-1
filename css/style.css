@@ -118,10 +118,16 @@ p{
     background: #e7e4d8;
     border-top: 5px solid #d6d3c8;
     border-bottom: 5px solid #d6d3c8;
+    padding: 60px 0;
 }
-
+.products-item{
+    flex: 1;
+    margin: 0 10px 40px 10px;
+}
 .products-item h2{
     font-size: 2.25em;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 .products-item h2::before{
@@ -133,6 +139,7 @@ p{
     background: currentColor;
     border: 5px solid #e7e4d8;
     box-shadow: 0 0 0 10px currentColor;
+    margin: 20px auto;
 }
 .products-item:nth-child(1) h2::before{
     color: #492901;
@@ -159,6 +166,9 @@ p{
     text-transform: uppercase;
     cursor: pointer;
     transition: .5s all ease;
+    width: 180px;
+    padding: 15px 0;
+    margin: 20px auto 0 auto;
 }
 .products-btn:hover{
     background: #252525;
@@ -166,13 +176,29 @@ p{
 }
 
 /*-----------------------------LOCAL------------------------------*/
-
+.local{
+    padding: 60px 0;
+}
+.local-item{
+    margin-bottom: 40px;
+}
+.local-img, .local-info{
+    flex: 1;
+    margin: 0 10px;
+}
+.local-img img{
+    max-width: 100%;
+    display: block;
+}
 .local-item h2{
     font-size: 2.25em;
+    margin-bottom: 20px;
 }
 .local-item p {
     font-size: 1.125em;
     line-height: 1.4em;
+    max-width: 320px;
+    margin-bottom: 40px;
 }
 .local-item button{
     font-size: 1.125em;
@@ -183,6 +209,7 @@ p{
     font-weight: bold;
     cursor: pointer;
     transition: .5s all ease;
+    padding: 10px 20px;
 }
 .local-item button:hover{
     background: #252525;
