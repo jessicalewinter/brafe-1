@@ -176,13 +176,22 @@ img{
 }
 
 /*-----------------------------LOCAL------------------------------*/
-
+.local{
+    padding: 60px 0;
+}
+.local-item{
+    margin-bottom: 40px;
+}
 .local-item h2{
     font-size: 2.25em;
+    margin-bottom: 20px;
+    margin-top: 10px;
 }
 .local-item p {
     font-size: 1.125em;
     line-height: 1.4em;
+    max-width: 320px;
+    margin-bottom: 40px;
 }
 .local-item button{
     font-size: 1.125em;
@@ -193,6 +202,7 @@ img{
     font-weight: bold;
     cursor: pointer;
     transition: .5s all ease;
+    padding: 10px 20px;
 }
 .local-item button:hover{
     background: #252525;
@@ -203,6 +213,7 @@ img{
 
 .sign{
     background: #e7e4d8;
+    padding: 30px 0;
 }
 
 .sign-info h2{
@@ -222,6 +233,9 @@ img{
     font-style: italic;
     font-family: Georgia, 'Times New Roman', Times, serif;
     outline: none; 
+    width: calc(100% - 140px);
+    padding: 10px;
+    float: left;
 }
 .sign button{
     background: #252525;
@@ -231,16 +245,31 @@ img{
     font-size: 1.5em;
     cursor: pointer;
     outline: none;
+    width: 140px;
+    padding: 13px 0;
+}
+@media only screen and (max-width:739px){
+    .sign-info p{
+        margin: 20px 0;
+    }
 }
 
 /*-----------------------------FOOTER------------------------------*/
 
 .footer{
     background: #d6d3c8;
+    padding: 40px 0;
 }
-
+.footer img{
+    float: right;
+}
 .footer p{
     font-size: 1.125em;
     line-height: 1.4em;
 }
-
+@media only screen and (max-width:739px){
+    .footer img{
+        margin-top: 20px;
+        float: none;
+    }
+}
